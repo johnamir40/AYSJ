@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+.navbarpm{
+
+display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+
+    width: 864px;
+    height: 50px;
+    background: transparent;
+	    position: relative;
+    left: 21px;
+
+
+}
+.navbarpm > button {
+width: 148px;
+height: 48px;
+border-radius: 4px;
+background: #a31919;
+	font-family: Arial;
+font-weight: bold;
+font-size: 12px;
+line-height: 45px;
+text-align: center;
+color: #fff;
+border-color:#a31919;
+}
+.navbarpm > button:hover{
+background: #fe0303;}
+.search{
+    width: 476px;
+height: 45px;
+border-radius: 4px;
+background: #fff;
+font-family: "Source Sans Pro";
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+text-align: left;
+color: #4d4f5c;
+    position: relative;
+   left: 1004px;
+    bottom: 47px;
+}
+
+</style>
+
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<div class="navbarpm">
+<button onclick="location.href ='pm.php'" style='background: #fe0303;'>All Projects</button>
+<button onclick="location.href ='pm.php?action=active'">Active</button>
+<button onclick="location.href ='pm.php?action=completed'">Completed</button>
+<button onclick="location.href ='pm.php?action=cancelled'">Cancelled</button>
+
+
+</div>
+</head>
+</html>
